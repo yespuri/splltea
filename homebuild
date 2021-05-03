@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ls -tr1 | grep "-" | sed 's/^/(jhagas.github.io\/blog\//; s/$/)/' > temp
+ls -tr1 | grep "-" | sed 's/^/(/; s/$/)/' > temp
 
 paste -d']' list temp | sed 's/^/1. [/' > index.md
 
