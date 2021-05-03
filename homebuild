@@ -40,7 +40,7 @@ cat << EOF > index.html
 
 <h2 class="atx" id="list-artikel">List Artikel</h2>
 <blockquote>
-<p>Daftar artikel yang ada di bawah ini diurutkan berdasarkan waktu pembuatan artikel (dari yang terbaru). Saya tidak akan menerapkan fitur pencarian di blog ini, silahkan gunakan fitur <strong>cari di laman ini</strong> pada browser anda. Jika anda memakai komputer atau laptop, anda bisa melakukan pencarian dengan shortcut <strong>Ctrl+f</strong></p>
+<p>Daftar artikel yang ada di bawah ini diurut berdasarkan waktu pembuatan artikel (dari yang terbaru). Saya tidak akan menerapkan fitur pencarian di blog ini, silahkan gunakan fitur <strong>cari di laman ini</strong> pada browser anda. Jika anda memakai komputer atau laptop, anda bisa mulai melakukan pencarian dengan pintasan keyboard <strong>Ctrl+f</strong></p>
 </blockquote>
 ${HTML}
 </article>
