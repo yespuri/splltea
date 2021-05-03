@@ -1,0 +1,94 @@
+#!/bin/bash
+
+# MARKDOWN INTERPRETER
+cat << EOF
+
+Default Markdown interpreter is a Pandoc's Markdown
+You can use other type of markdown interpreter such as
+GFM (Github's Flavored Markdown).
+
+GFM great when no math format in the md file.
+
+Pandoc's Markdown is great for handling math,
+but image formatting will be pain in the ass.
+
+type y if you want to use GFM, and type n to use
+default Pandoc's Markdown
+
+EOF
+
+# Asking User for MD interpreter
+read -rp "Use GFM (y/n): " INTR
+
+# Reading User Selection on MD interpreter
+if [ "$INTR" == "y" ]; then
+    FORMAT="gfm"
+else
+    FORMAT="markdown"
+fi
+
+
+# GETTING DOCUMENT TITLE
+# Should be in the first line of Markdown file
+MD=$(head -n 1 < index.md)
+
+# Converting Markdown to HTML
+# Also removing the first Line (h1)
+HTML=$(pandoc -f "${FORMAT}" -t html index.md | tail -n +2 )
+
+read -rp "Article Titlebar: " TITLE
+read -rp "Article Description: " DESC
+
+
+# The index.md file and this script
+# should be in the same directory
+
+# Input md file should be named index.md
+# The output HTML file will be index.html
+cat << EOF > index.html
+<html>
+	<head>
+		<title>${TITLE} - Jhagas's Blog</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="https://jhagas.github.io/blog">Jhagas's Blog</a></h1>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+<article class="post">
+	<header>
+		<div class="title">
+			<h2>${MD#* }</a></h2>
+            <p>${DESC}<br>
+            <time class="published" datetime="$(date "+%Y-%m-%d")">$(date "+%A, %d %B %Y")</time></p>
+		</div>
+	</header>
+
+				<!-- Post -->
+<span class="image featured"><img src="images/judul.png" alt="" /></span>
+${HTML}
+</article>
+</div>
+
+				<!-- Footer -->
+					<section id="footer">
+                        <p class="social">Follow me on <a href="https://qoto.org/web/accounts/438673">Mastodon</a></p>
+                        <p class="copyright">&copy; Jhagas Hana Winaya, Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0,</a> <a href="https://github.com/jhagas/blog">(Source Code)</a>.</p>
+					</section>
+			</div>
+	</body>
+</html>
+
+EOF
+

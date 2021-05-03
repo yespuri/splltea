@@ -1,3 +1,12 @@
+#!/bin/bash
+
+ls -tr1 | grep "-" | sed 's/^/(jhagas.github.io\/blog\//; s/$/)/' > temp
+
+paste -d']' list temp | sed 's/^/1. [/' > index.md
+
+HTML=$(pandoc -f gfm -t html index.md)
+
+cat << EOF > index.html
 <html>
 	<head>
 		<title>Selamat Datang - Jhagas's Blog</title>
@@ -30,9 +39,7 @@
 				<!-- Post -->
 
 <h2 class="atx" id="list-artikel">List Artikel</h2>
-<ol type="1">
-<li><a href="jhagas.github.io/blog/command-line-adalah-jalan-ninjaku">MENGGUNAKAN COMMAND LINE ADALAH JALAN NINJAKU</a></li>
-</ol>
+${HTML}
 </article>
 </div>
 
@@ -45,3 +52,6 @@
 	</body>
 </html>
 
+EOF
+
+rm temp index.md
