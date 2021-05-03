@@ -1,8 +1,8 @@
 #!/bin/bash
 
-ls -tr1 | grep "-" | sed 's/^/(/; s/$/)/' > temp
+ls -t1 | grep "-" | sed 's/^/(/; s/$/)/' > temp
 
-paste -d']' list temp | sed 's/^/1. [/' > index.md
+paste -d']' list temp | sed 's/^/- [/' > index.md
 
 HTML=$(pandoc -f gfm -t html index.md)
 
@@ -39,6 +39,9 @@ cat << EOF > index.html
 				<!-- Post -->
 
 <h2 class="atx" id="list-artikel">List Artikel</h2>
+<blockquote>
+<p>Daftar artikel yang ada di bawah ini diurutkan berdasarkan waktu pembuatan artikel (dari yang terbaru). Saya tidak akan menerapkan fitur pencarian di blog ini, silahkan gunakan fitur <strong>cari di laman ini</strong> pada browser anda. Jika anda memakai komputer atau laptop, anda bisa melakukan pencarian dengan shortcut <strong>Ctrl+f</strong></p>
+</blockquote>
 ${HTML}
 </article>
 </div>
