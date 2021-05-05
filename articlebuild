@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Dependencies
+# https://github.com/Zaharid/pandoc_static_katex
+# Pandoc
+
 # MARKDOWN INTERPRETER
 cat << EOF
 
@@ -25,7 +29,7 @@ read -rp "Use GFM (y/n): " INTR
 if [ "$INTR" == "y" ]; then
     HTML=$(pandoc -f gfm -t html index.md | tail -n +2 )
 else
-    HTML=$(pandoc -f markdown -t html index.md --mathjax | tail -n +2 )
+    HTML=$(pandoc -s index.md --filter pandoc-static-katex -t html5 --css https://cdn.jsdelivr.net/npm/katex@0.13.5/dist/katex.min.css | sed '/<\/h1>/d')
 fi
 
 
@@ -63,7 +67,7 @@ cat << EOF > index.html
 		<div class="title">
 			<h2>${MD#* }</a></h2>
             <p>${DESC}<br>
-            <time class="published" datetime="$(date "+%Y-%m-%d")">$(date "+%A, %d %B %Y")</time></p>
+            <time class="published" datetime="$(date "+%Y-%m-%d")"><strong><em>$(date "+%A, %d %B %Y")</strong></em></time></p>
 		</div>
 	</header>
 <span class="image featured"><img src="images/judul.png" alt="" /></span>
@@ -76,7 +80,6 @@ ${HTML}
 					</section>
 			</div>
 	</body>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
 </html>
 
 EOF
@@ -100,7 +103,7 @@ cat << EOF > index.html
 		<div class="title">
 			<h2>${MD#* }</a></h2>
             <p>${DESC}<br>
-            <time class="published" datetime="$(date "+%Y-%m-%d")">$(date "+%A, %d %B %Y")</time></p>
+            <time class="published" datetime="$(date "+%Y-%m-%d")"><strong><em>$(date "+%A, %d %B %Y")</strong></em></time></p>
 		</div>
 	</header>
 <span class="image featured"><img src="images/judul.png" alt="" /></span>

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+find . -name index.md -printf "\n%C+ %p" -exec head -n1 {} \; | sort -t+ -k1r -k2r | cut -d# -f 2 | cut -c2- | sed  '/^$/d' > list
+
 ls -t1 | grep "-" | sed 's/^/(/; s/$/)/' > temp
 
 paste -d']' list temp | sed 's/^/- [/' > index.md
@@ -16,37 +18,27 @@ cat << EOF > index.html
 	</head>
 	<body class="single is-preload">
 
-		<!-- Wrapper -->
 			<div id="wrapper">
-
-				<!-- Header -->
 					<header id="header">
 						<h1><a href="https://jhagas.github.io/blog">Jhagas's Blog</a></h1>
 					</header>
 
-				<!-- Main -->
-					<div id="main">
-
+			<div id="main">
 <article class="post">
 	<header>
 		<div class="title">
 			<h2>Halo, Selamat Datang!</a></h2>
-            <p>Sebuah blog sederhana yang berisi tentang hal-hal menarik di bidang STEM (Science, Technology, Engineering, Mathematics)<br>
+            <p>Sebuah blog sederhana yang membahas hal-hal menarik di bidang STEM (Science, Technology, Engineering, Mathematics)<br>
             Ditulis oleh Jhagas Hana Winaya</p>
 		</div>
 	</header>
-
-				<!-- Post -->
-
-<h2 class="atx" id="list-artikel">List Artikel</h2>
+<h2 class="atx" id="daftar-artikel">Daftar Artikel</h2>
 <blockquote>
-<p>Daftar artikel yang ada di bawah ini diurut berdasarkan waktu pembuatan artikel (dari yang terbaru). Saya tidak akan menerapkan fitur pencarian di blog ini, silahkan gunakan fitur <strong>cari di laman ini</strong> pada browser anda. Jika anda memakai komputer atau laptop, anda bisa mulai melakukan pencarian dengan pintasan keyboard <strong>Ctrl+f</strong></p>
+<p>Daftar artikel berikut diurutkan dari post terbaru. Saya tidak akan menerapkan fitur pencarian di blog ini, silahkan gunakan fitur <strong>"Cari di halaman"</strong> pada peramban anda. Jika anda memakai komputer atau laptop, anda bisa mulai melakukan pencarian dengan pintasan keyboard <strong>Ctrl+f</strong></p>
 </blockquote>
 ${HTML}
 </article>
 </div>
-
-					<!-- Footer -->
 					<section id="footer">
                         <p class="social">Follow me on <a href="https://qoto.org/web/accounts/438673">Mastodon</a></p>
                         <p class="copyright">&copy; Jhagas Hana Winaya, Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0,</a> <a href="https://github.com/jhagas/blog">(Source Code)</a>.</p>
@@ -57,4 +49,4 @@ ${HTML}
 
 EOF
 
-rm temp index.md
+rm temp index.md list
