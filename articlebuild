@@ -14,9 +14,9 @@ read -rp "Use math? (y/n): " INTR
 # Converting Markdown to HTML
 # Also removing the first Line (h1)
 if [ "$INTR" == "n" ]; then
-    HTML=$(pandoc -f markdown -t html index.md | tail -n +2 )
+    HTML=$(pandoc -f markdown -t html index.md --highlight-style zenburn | tail -n +2 )
 else
-    HTML=$(pandoc -s index.md --filter pandoc-static-katex -t html5 --css https://cdn.jsdelivr.net/npm/katex@0.13.5/dist/katex.min.css | sed '/<\/h1>/d')
+    HTML=$(pandoc -s index.md --filter pandoc-static-katex -t html5 --css https://cdn.jsdelivr.net/npm/katex@0.13.5/dist/katex.min.css --highlight-style zenburn | sed '/<\/h1>/d')
 fi
 
 
