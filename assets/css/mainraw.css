@@ -669,4 +669,10 @@ hr {
     img {
         box-shadow: 0 0 8px 0 #434C5E;
     }
+
+    @media screen and (max-width: 736px) {
+			#wrapper {
+				padding: 0 1.5em 0 1.5em;
+			}
+	}
 }
