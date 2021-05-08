@@ -105,21 +105,21 @@ body {
 	body, input, select, textarea {
 		color: #4C566A;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 14pt;
+		font-size: 18pt;
 		font-weight: 400;
 		line-height: 1.75;
 	}
 
 		@media screen and (max-width: 1680px) {
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 		}
 
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -127,7 +127,7 @@ body {
 		@media screen and (max-width: 980px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -135,7 +135,7 @@ body {
 		@media screen and (max-width: 736px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -143,7 +143,7 @@ body {
 		@media screen and (max-width: 480px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -225,7 +225,7 @@ body {
 	}
 
 	code {
-		background: rgba(160, 160, 160, 0.075);
+		background: #E5E9F0;
 		border: solid 1px #d8dee9;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
@@ -410,7 +410,6 @@ body {
 		font-weight: 400;
 		letter-spacing: 0.25em;
 		line-height: 2;
-		margin-top: 1em;
 		text-transform: uppercase;
 	}
 
@@ -485,7 +484,7 @@ body {
 		#header h1 {
 			height: inherit;
 			line-height: inherit;
-			padding: 1pt 0 0 1.5em;
+			padding: 0 0 0 1.5em;
 			white-space: nowrap;
 		    margin: 0 0 0 0;
 		}
@@ -529,7 +528,7 @@ body {
 		@media screen and (max-width: 1680px) {
 
 			#wrapper {
-				padding: 3em 6em;
+				padding: 3em 9em;
 			}
 
 		}
@@ -579,3 +578,95 @@ body {
 	body.single #footer {
 		text-align: center;
 	}
+
+
+@media (prefers-color-scheme: dark) {
+body {
+    background: #3B4252;
+}
+
+body, input, select, textarea {
+    color: #D8DEE9;
+}
+
+a {
+	border-bottom: dotted 1px #5E81AC;
+}
+        a:hover, a:focus {
+            color: #88C0D0;
+        }
+
+strong, b {
+	color: #D8DEE9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #E5E9F0;
+}
+
+blockquote {
+	border-left: solid 4px #4C566A;
+}
+
+code {
+	border: none;
+	color: #2E3440;
+}
+
+hr {
+	border-bottom: none;
+}
+
+	.post {
+		background: #2e3440;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	    border: none;
+	}
+
+	.post > header {
+		border-bottom: solid 1px #3b4252;
+	}
+
+	.post > header .published {
+		color: #D8DEE9;
+	}
+
+	table tbody tr {
+		border: solid 1px #434C5E60;
+	}
+
+	table tbody tr:nth-child(2n + 1) {
+		background-color: #3B4252;
+	}
+
+ 	table thead {
+        color: #D8DEE9;
+	}
+
+ 	table th {
+        color: #D8DEE9;
+		border-bottom: solid 2px #D8DEE960;
+	}
+
+	#header {
+		background-color: #3B4252;
+		border-bottom: none;
+        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15);
+	}
+
+        #header a:hover, #header a:focus {
+            color: #EBCB8B;
+        }
+
+	#footer .social {
+		color: #D8DEE9;
+	}
+
+	#footer .copyright {
+		color: #D8DEE9;
+	}
+
+    img {
+        box-shadow: 0 0 8px 0 #434C5E;
+    }
+}
