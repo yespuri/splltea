@@ -366,7 +366,7 @@ body {
 		@media screen and (max-width: 736px) {
 
 			.post {
-				padding: 1.5em 1.5em 0.1em 1.5em ;
+				padding: 1.5em 1.5em 1.5em 1.5em ;
 				left: -1.5em;
 				margin: 0 0 2em 0;
 				width: calc(100% + (1.5em * 2));
@@ -380,7 +380,7 @@ body {
 				}
 
 					.post > header .title h2 {
-						font-size: 1.1em;
+						font-size: 1.4em;
 					}
 		}
 
