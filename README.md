@@ -41,8 +41,7 @@ This is the software i use to build this site, and the installation command (in 
 1. Use Math formula? Don't worry, if the script ask you to use math, type `y` and `ENTER`
 1. `cd ..` to main directory and execute git command to sync the change to Github Online Repository.
     ```
-    git add *
-    git commit -m "commit message"
+    git commit -am "commit message"
     git push
     ```
 

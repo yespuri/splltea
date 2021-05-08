@@ -1,8 +1,8 @@
 #!/bin/bash
 
-find . -name index.md -printf "\n%C+ %p" -exec head -n1 {} \; | sort -t+ -k1r -k2r | cut -d# -f 2 | cut -c2- | sed  '/^$/d' > list
+find . -name index.md -printf "\n%C+ %p" -exec head -n1 {} \; | sort -t+ -k1r -k2r | cut -d/ -f2- | grep "-" | cut -d# -f 2 | cut -c2- | sed  '/^$/d' > list
 
-ls -t1 | grep "-" | sed 's/^/(/; s/$/)/' > temp
+ls -t1 | grep "-" | sed 's/^/(.\//; s/$/)/' > temp
 
 paste -d']' list temp | sed 's/^/- [/' > index.md
 
@@ -26,7 +26,7 @@ cat << EOF > index.html
 <header>
 <div class="title">
 <h2>Halo, Selamat Datang!</a></h2>
-<p>Sebuah blog sederhana yang membahas hal-hal menarik di bidang STEM (Science, Technology, Engineering, Mathematics)<br>Ditulis oleh Jhagas Hana Winaya</p>
+<p>Sebuah blog sederhana yang membahas hal-hal menarik di bidang STEM (Science, Technology, Engineering, Mathematics)<br><a href="./about">Ditulis oleh Jhagas Hana Winaya</a></p>
 </div>
 </header>
 <h2 class="atx" id="daftar-artikel">Daftar Artikel</h2>
