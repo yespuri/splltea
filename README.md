@@ -27,7 +27,7 @@ This is the software i use to build this site, and the installation command (in 
     # I Assume node.js and npm is already installed
     sudo npm install -g csso-cli
     ```
-5. [KaTeX](katex.org) (Fast math interpreter in web technology. Integrated in script)
+5. [KaTeX](https://katex.org) (Fast math interpreter in web technology. Integrated in script)
 
 ## How I Make an Article In My Blog?
 
