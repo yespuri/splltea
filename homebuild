@@ -37,7 +37,7 @@ ${HTML}
 </article>
 </div>
 <section id="footer">
-<p class="social">Follow me on <a href="https://qoto.org/web/accounts/438673">Mastodon</a></p>
+<p class="social">Follow me on <a href="https://qoto.org/@jhagas">Mastodon</a></p>
 <p class="copyright">&copy; Jhagas Hana Winaya, Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0,</a> <a href="https://github.com/jhagas/blog">(Source Code)</a>.</p>
 </section>
 </div>

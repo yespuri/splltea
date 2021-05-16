@@ -57,6 +57,7 @@ figcaption {
     margin-top: 0.8em;
     margin-bottom: 3em;
 }
+    
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -219,9 +220,14 @@ body {
 	blockquote {
 		border-left: solid 4px #d8dee9;
 		font-style: italic;
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 		padding: 0.3em 0 0.1em 1.5em;
 	}
+
+        blockquote p {
+            margin: 0 0 0.5em 0;
+        }
+
 
 	code {
 	    color: #e5e9f0;
