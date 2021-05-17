@@ -1,4 +1,4 @@
-# Cara BENAR untuk Belajar Subjek Saintek
+# CARA BENAR UNTUK BELAJAR SUBJEK SAINTEK
 
 Belajar materi-materi saintek bagi sebagian orang adalah hal yang sulit
 untuk dilakukan, karena banyak konsep-konsep ilmu eksak yang abstrak.
