@@ -1,0 +1,22 @@
+# Tingkat Literasi Digital Masyarakat Indonesia Dalam Menelaah Berita Dari Media Daring
+
+Literasi digital merupakan hal yang sangat penting untuk dipahami pada masa sekarang ini di mana hampir seluruh kebutuhan dapat diakses dari genggaman ponsel, baik dari kebutuhan sehari-hari dengan belanja daring sampai dengan kebutuhan akan informasi yang bisa didapat dari media sosial dan situs portal berita. Namun, pada kenyataannya masih banyak orang yang tidak memahami seluk beluk dunia digital sehingga mudah terjebak, bahkan berpartisipasi dalam penyebaran berita bohong. Maka dari itu, ditulislah artikel ini untuk memperdalam pemahaman tentang istilah-istilah digital dan mengukur seberapa sering kebiasaan-kebiasaan baik yang dilakukan dalam rangka menelaah atau memahami isi dan sumber berita daring.
+
+
+## Penjelasan Domain, Dan Kebiasaan Masyarakat Indonesia Dalam Mengecek Nama Domain
+
+Dalam menelaah berita dari sumber daring, diperlukan tingkat literasi digital. Pembahasan literasi digital dimulai dengan bagaimana internet bekerja. Pada dasarnya, dengan kemampuan di bidang komputer, semua orang dapat membuat konten atau bahkan meniru laman tertentu dan dimasukkan ke dalam jaringan *web*.
+
+Secara singkat, definisi domain adalah nama dari situs, atau yang dapat disebut URL. Setiap domain itu unik, dan tidak ada yang sama. Menurut survei dari Kominfo di 34 provinsi di Indonesia pada tahun 2020, mayoritas masyarakat Indonesia jarang, sangat jarang atau bahkan tidak pernah memeriksa domain situs *web* yang dikunjungi untuk membaca sebuah berita. Dari survei tersebut, dapat diketahui bahwa pemahaman tentang konsep domain oleh masyarakat Indonesia masih rendah. Hal ini penting karena jika ada yang membuat berita bohong dengan tampilan yang sangat mirip dengan media *mainstream* tertentu, maka satu-satunya hal yang dapat membedakannya adalah dengan cara memperhatikan nama domain.
+
+## Kebiasaan Membaca Laman About Us
+
+Jika domain situs yang kita kunjungi sudah dirasa tepat dan bukan situs tiruan, kita bisa melanjutkan dengan membaca secara singkat informasi tentang kami atau *about us* yang terdapat pada bagian bawah semua situs berita daring*.* Dengan membaca laman *about us,* diharapkan masyarakat dapat mengetahui latar belakang dari media daring tersebut. Namun hasil survei Kominfo mengungkapkan bahwa hanya sekitar 8,3% persen masyarakat Indonesia yang sering/sangat sering untuk meluangkan waktunya untuk membaca laman *about us.* Ini menjadi hal yang memprihatinkan karena hanya dengan membaca beritanya saja, masyarakat akan kesulitan untuk menyimpulkan kenapa artikel tersebut ditulis dan dimuat.
+
+## Semakin Banyak Sudut Pandang, Semakin Jernih Melihat Suatu Masalah
+
+Di dalam dunia nyata, untuk memahami dengan baik permasalahan atau isu tertentu, kita harus melihat permasalahan atau isu tersebut dari banyak sudut pandang. Hal serupa juga berlaku di media digital. Seperti yang saya sebutkan sebelumnya, semua orang dapat memasukkan kontennya ke dalam jaringan *web*. Ini berarti di jaringan *web*, terdapat banyak opini dan sudut pandang yang tersebar untuk membahas suatu isu/fakta yang sama. Dengan melihat beberapa sumber informasi pada suatu masalah yang sama, diharapkan masyarakat bisa memahami suatu isu atau masalah tertentu dengan jernih dan tidak terjadi bias. Menurut survei Kominfo, sudah sekitar 21% persen masyarakat Indonesia yang sering/sangat sering membaca lebih dari satu sumber media daring pada suatu isu yang sama.  Bukan angka yang baik, namun angka ini diharapkan untuk terus meningkat seiring dengan pemahaman tentang literasi digital masyarakat Indonesia yang semakin tinggi.
+
+## Wrapping Up
+
+Dalam upaya memahami suatu permasalahan yang dibahas di dunia digital, diperlukan beberapa pemahaman tentang bagaimana internet bekerja yaitu dengan mengetahui setiap domain itu unik dan tidak dapat ditiru. Selain itu diperlukan juga rasa ingin mencari tahu tentang latar belakang media digital dengan membaca laman *about us* dan kemampuan untuk membaca berita lebih dari satu. Secara praktis hal ini bisa dilakukan dengan hanya mengikuti/membaca berita yang disebarkan oleh akun media sosial resmi dari portal berita yang dirasa kredibel. Untuk yang telah mengenal dunia teknologi secara lebih dalam, Bisa juga menggunakan RSS Feed. RSS Feed adalah sebuah teknologi gerbang berita yang lebih baik dari platform sosial media atau aplikasi berita manapun.
