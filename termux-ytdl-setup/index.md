@@ -18,7 +18,7 @@ _paste_ kode BASH berikut ini ke dalam Termux, lalu tekan enter di keyboard
 ponsel android anda.
 
 ```bash
-curl -sL https://git.io/JcuNt -o setup.sh
+curl -sL https://git.io/Jcuhy -o setup.sh
 chmod 777 setup.sh
 ./setup.sh
 ```
@@ -65,7 +65,7 @@ kebutuhan. Dengan menggunakan pengunduh YouTube Termux ini, anda telah
 mengamankan sedikit banyak privasi digital anda, dari pada menggunakan
 aplikasi pihak-ketiga yang banyak iklannya.
 
-> With The great power, come great Responsibility
+> With a great power, comes a great Responsibility
 
 Termux memang _powerfull_ namun, anda harus tetap menghargai hak cipta
 pembuat konten yang anda unduh. Silahkan simpan video tersebut untuk
