@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Termux Untuk Download Video YouTube - Jhagas's Blog</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+<body class="single is-preload">
+<div id="wrapper">
+<header id="header">
+<h1><a href="https://jhagas.github.io/blog">Jhagas's Blog</a></h1>
+</header>
+<div id="main">
+<article class="post">
+<header>
+<div class="title">
+<h2>TERMUX UNTUK DOWNLOAD VIDEO DARI YOUTUBE, INSTAGRAM, DLL</a></h2>
+<p>Memang sedikit agak rumit, namun menarik untuk dicoba</p>
+<time class="published" datetime="2021-07-03">Sabtu, 03 Juli 2021</time>
+</div>
+</header>
+<span class="image featured"><img src="images/judul.png" alt="" /></span>
+<p>Aplikasi pengunduh YouTube sudah banyak tersedia di Android, namun terkadang aplikasi tersebut dipenuhi oleh banyak iklan dan juga <em>tracker</em> yang mengganggu ketenangan dan privasi digital anda.</p>
+<p>Salah satu cara yang bisa dilakukan untuk mengatasi hal ini adalah dengan <a href="https://play.google.com/store/apps/details?id=com.termux&amp;hl=en&amp;gl=US">Termux</a> yang dapat diunduh di Google Play Store. Bagi yang belum pernah tahu Termux, Termux adalah aplikasi yang mengemulasikan terminal atau console GNU/Linux di dalam Android. Termux ini multifungsi, dan bisa melakukan hampir segala hal, termasuk untuk mengunduh video dari internet.</p>
+<h2 id="first-time-setup">First-time Setup</h2>
+<p>Silahkan untuk membuka aplikasi Anda. Untuk setup pertama, cukup <em>copy</em> dan <em>paste</em> kode BASH berikut ini ke dalam Termux, lalu tekan enter di keyboard ponsel android anda.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-sL</span> https://git.io/JcuNt <span class="at">-o</span> setup.sh</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">chmod</span> 777 setup.sh</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">./setup.sh</span></span></code></pre></div>
+<p>Proses akan memakan waktu beberapa menit. Dibutuhkan koneksi internet untuk menjalankan kode instalasi tersebut, pastikan kuota data anda mencukupi (mengunduh file sekitar 70MB), dan juga pastikan ruang penyimpanan anda mencukupi.</p>
+<p>Jika anda mempunyai Termux yang <em>fresh-Install</em> Kemungkinan pada saat proses, anda akan disuguhi beberapa dialog CLI. Untuk mengatasi hal tersebut, cukup ketik “y” dan ENTER pada dialog pertama lalu ENTER pada dialog kedua dan ketiga.</p>
+<ul>
+<li><p>Dialog Pertama <img src="images/pertama.png" alt="apt Confirmation Dialog 1" /> Langsung ketik “y” lalu ENTER</p></li>
+<li><p>Kedua dan Ketiga (sama) <img src="images/kedua.png" alt="apt Confirmation Dialog 2" /> Langsung tap ENTER pada keyboard</p></li>
+</ul>
+<p>Untuk menyimpan video yang akan anda unduh, Termux memerlukan izin kepada penyimpanan Internal Android. Ketika dialog ini muncul, maka silahkan untuk mengetuk “Allow” atau “Izinkan” pada dialog tersebut</p>
+<figure>
+<img src="images/ss-storage-dialog.png" alt="Termux Storage Permission Dialog" /><figcaption aria-hidden="true">Termux Storage Permission Dialog</figcaption>
+</figure>
+<p>Setelah itu tunggu beberapa saat sampai semua proses terselesaikan.</p>
+<h2 id="download-video-dari-youtube-atau-sumber-lainnya">Download Video dari YouTube, atau sumber lainnya</h2>
+<p>Setelah setup selesai, anda langsung bisa menggunakan Termux untuk mengunduh video, baik dari Instagram, YouTube atau aplikasi-aplikasi lain yang didukung. Cukup dengan mengetuk tombol bagikan lalu pilih Termux</p>
+<p><img src="images/unduh-demo.png" width=50%></p>
+<h2 id="wrapping-up">Wrapping Up</h2>
+<p>Karena kebutuhan akan privasi digital dan perlindungan data pribadi yang semakin meningkat, maka menggunakan aplikasi Open-Source adalah sebuah kebutuhan. Dengan menggunakan pengunduh YouTube Termux ini, anda telah mengamankan sedikit banyak privasi digital anda, dari pada menggunakan aplikasi pihak-ketiga yang banyak iklannya.</p>
+<blockquote>
+<p>With The great power, come great Responsibility</p>
+</blockquote>
+<p>Termux memang <em>powerfull</em> namun, anda harus tetap menghargai hak cipta pembuat konten yang anda unduh. Silahkan simpan video tersebut untuk konsumsi pribadi.</p>
+</article>
+</div>
+<section id="footer">
+<p class="social">Follow me on <a href="https://qoto.org/@jhagas">Mastodon</a></p>
+<p class="copyright">&copy; Jhagas Hana Winaya, Licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode">CC-BY-SA 3.0,</a> <a href="https://github.com/jhagas/blog">(Source Code)</a>.</p>
+</section>
+</div>
+</body>
+</html>
